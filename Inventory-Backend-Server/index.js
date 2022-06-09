@@ -30,14 +30,16 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var authenticationRouter = require("./Routes/SecuringAPI/Secure-Route");
+//var authenticationRouter = require("./Routes/SecuringAPI/Secure-Route");
 var blogRouter = require("./Routes/Blog/Blog-Route");
 var UOMRouter = require("./Routes/UOM/UOM-Route");
+var COLORRouter = require("./Routes/COLOR/COLOR-Route");
 var websiteInfoRouter = require("./Routes/Website-Info/WebsiteInfo-Route");
 const { prototype } = require("jsonwebtoken/lib/JsonWebTokenError");
 
-app.use("/api/authentication", authenticationRouter);
+//app.use("/api/authentication", authenticationRouter);
 app.use("/api/uom", UOMRouter);
+app.use("/api/color", COLORRouter);
 app.use("/api/blogs", blogRouter);
 app.use("/api/webinfo", websiteInfoRouter);
 
