@@ -32,12 +32,20 @@ app.use(express.json());
 
 var authenticationRouter = require("./Routes/SecuringAPI/Secure-Route");
 var blogRouter = require("./Routes/Blog/Blog-Route");
+var UOMRouter = require("./Routes/UOM/UOM-Route");
 var websiteInfoRouter = require("./Routes/Website-Info/WebsiteInfo-Route");
 const { prototype } = require("jsonwebtoken/lib/JsonWebTokenError");
 
 app.use("/api/authentication", authenticationRouter);
+app.use("/api/uom", UOMRouter);
 app.use("/api/blogs", blogRouter);
 app.use("/api/webinfo", websiteInfoRouter);
+
+/*
+api/uom GET
+api/uom POST
+api/uom/id DELETE
+*/
 
 const errorHandler = (error, request, response, next) => {
   console.error(error.message);
