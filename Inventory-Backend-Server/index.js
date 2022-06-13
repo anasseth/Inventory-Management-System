@@ -35,6 +35,7 @@ var blogRouter = require("./Routes/Blog/Blog-Route");
 var UOMRouter = require("./Routes/UOM/UOM-Route");
 var COLORRouter = require("./Routes/COLOR/COLOR-Route");
 var LocationRouter = require("./Routes/Location/Location-Route");
+var StockRouter = require("./Routes/Stock/Stock-Route");
 var websiteInfoRouter = require("./Routes/Website-Info/WebsiteInfo-Route");
 const { prototype } = require("jsonwebtoken/lib/JsonWebTokenError");
 
@@ -42,6 +43,7 @@ const { prototype } = require("jsonwebtoken/lib/JsonWebTokenError");
 app.use("/api/uom", UOMRouter);
 app.use("/api/color", COLORRouter);
 app.use("/api/location", LocationRouter);
+app.use("/api/stock", StockRouter);
 app.use("/api/blogs", blogRouter);
 app.use("/api/webinfo", websiteInfoRouter);
 
