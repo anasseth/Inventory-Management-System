@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card class="inline-form-card">
+      <nb-card-header>Setup UOM</nb-card-header>
+      <nb-card-body>
+        <form class="form-inline">
+          <input type="text" nbInput fullWidth placeholder="UOM Name" />
+          <input type="text" nbInput fullWidth placeholder="UOM Description" />
+          <nb-checkbox>Active</nb-checkbox>
+          <button type="submit" nbButton status="primary">Create</button>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+<nb-card size="medium">
+  <nb-card-header>
+    <span>UOM Data</span>
+  </nb-card-header>
+
+  <nb-list class="user-activity-list">
+    <nb-list-item>
+      <div class="visited-date"><b style="font-weight: 700">Name</b></div>
+
+      <div class="visited-pages-count">
+        <b style="font-weight: 700">Description</b>
+      </div>
+
+      <div class="visited-percentages">
+        <b style="font-weight: 700">Active</b>
+      </div>
+    </nb-list-item>
+
+    <nb-list-item>
+      <div class="visited-date">PCS</div>
+
+      <div class="visited-pages-count">Single Piece in Carton</div>
+
+      <div class="visited-percentages">
+        <button nbButton status="success" size="small" outline>True</button>
+      </div>
+    </nb-list-item>
+    <nb-list-item>
+      <div class="visited-date">Carton</div>
+
+      <div class="visited-pages-count">24 PCS Carton</div>
+
+      <div class="visited-percentages">
+        <button nbButton status="danger" size="small" outline>False</button>
+      </div>
+    </nb-list-item>
+  </nb-list>
+</nb-card>
