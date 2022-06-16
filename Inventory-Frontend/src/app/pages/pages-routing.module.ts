@@ -74,6 +74,11 @@ const routes: Routes = [{
         .then(m => m.MiscellaneousModule),
     },
     {
+      path: 'stock-management',
+      loadChildren: () => import('./stock-management/stock-management.module')
+        .then(m => m.StockManagementModule),
+    },
+    {
       path: '',
       redirectTo: 'dashboard',
       pathMatch: 'full',

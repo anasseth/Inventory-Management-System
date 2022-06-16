@@ -1,0 +1,63 @@
+<nb-card>
+  <nb-card-header>Block form</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="articleNo" class="label">First Name</label>
+          <input
+            type="text"
+            nbInput
+            fullWidth
+            id="articleNo"
+            placeholder="Article No"
+          />
+        </div>
+      </div>
+
+      <div class="dropdown col-sm-4">
+        <div class="form-group">
+          <label for="inputLastName" class="label col-12">Last Name</label>
+          <nb-select placeholder="Select Showcase" class="col-12">
+            <nb-option value="">Option empty</nb-option>
+            <nb-option value="0">Option 0</nb-option>
+            <nb-option value="1">Option 1</nb-option>
+            <nb-option value="2">Option 2</nb-option>
+            <nb-option value="3">Option 3</nb-option>
+            <nb-option value="4">Option 4</nb-option>
+          </nb-select>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputEmail" class="label">Email</label>
+          <input
+            type="email"
+            nbInput
+            fullWidth
+            id="inputEmail"
+            placeholder="Email"
+          />
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputWebsite" class="label">Website</label>
+          <input
+            type="text"
+            nbInput
+            fullWidth
+            id="inputWebsite"
+            placeholder="Website"
+          />
+        </div>
+      </div>
+    </div>
+    <button type="submit" nbButton>Submit</button>
+  </nb-card-body>
+</nb-card>

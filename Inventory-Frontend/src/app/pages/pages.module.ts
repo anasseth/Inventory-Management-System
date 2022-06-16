@@ -8,6 +8,8 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { SetupsComponent } from './setups/setups.component';
+import { SettingsComponent } from './settings/settings.component';
+import { StockManagementComponent } from './stock-management/stock-management.component';
 
 @NgModule({
   imports: [
@@ -21,6 +23,8 @@ import { SetupsComponent } from './setups/setups.component';
   declarations: [
     PagesComponent,
     SetupsComponent,
+    SettingsComponent,
+    StockManagementComponent
   ],
 })
 export class PagesModule {
