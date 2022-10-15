@@ -15,4 +15,4 @@ COLORSchema.set("toJSON", {
   },
 });
 
-module.exports = mongoose.model("COLOR", COLORSchema);
+module.exports = mongoose.model("Color", COLORSchema);

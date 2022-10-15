@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ngx-sales-management',
+  selector: 'ngx-order-management',
   template: `<router-outlet></router-outlet>`,
 })
-export class SalesManagementComponent implements OnInit {
+export class OrderManagementComponent implements OnInit {
 
   constructor() { }
 

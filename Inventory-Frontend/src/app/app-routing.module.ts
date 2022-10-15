@@ -16,6 +16,11 @@ export const routes: Routes = [
       .then(m => m.PagesModule),
   },
   {
+    path: 'welcome',
+    loadChildren: () => import('./@theme/components/welocome-page/welocome-page.module')
+      .then(m => m.WelocomePageModule),
+  },
+  {
     path: 'auth',
     component: NbAuthComponent,
     children: [

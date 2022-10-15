@@ -20,6 +20,8 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { NgxBarcodeModule } from 'ngx-barcode';
+import { BarcodeScannerLivestreamModule } from "ngx-barcode-scanner";
 
 @NgModule({
   declarations: [AppComponent],
@@ -39,6 +41,8 @@ import {
     }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
+    BarcodeScannerLivestreamModule,
+    NgxBarcodeModule
   ],
   bootstrap: [AppComponent],
 })

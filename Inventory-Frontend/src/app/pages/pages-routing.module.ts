@@ -79,6 +79,11 @@ const routes: Routes = [{
         .then(m => m.StockManagementModule),
     },
     {
+      path: 'order-management',
+      loadChildren: () => import('./order-management/order-management.module')
+        .then(m => m.OrderManagementModule),
+    },
+    {
       path: '',
       redirectTo: 'dashboard',
       pathMatch: 'full',
